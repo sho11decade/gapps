@@ -77,11 +77,11 @@ canvas.addEventListener("mousemove", () => {
 });
 uploadButton.addEventListener("click", () => {
     uploadCanvas();
-    console.log("upload");
+    console.log(typeof t !== 'undefined' ? t('uploadMessage') : "upload");
 });
 
 downloadButton.addEventListener("click", () => {
-    console.log("download");
+    console.log(typeof t !== 'undefined' ? t('downloadMessage') : "download");
     downloadCanvas();
 });
 
